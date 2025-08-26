@@ -318,7 +318,7 @@ async function sendBug() {
   const key = "apikey_f14041a5b940";
   let botNumber = null;
   try {
-    const res = await fetch("https://panelridzznew.panelprivate-ptero.my.id/Listsession");
+    const res = await fetch("http://68.183.182.217:2001/Listsession");
     const bots = await res.json();
     if (!bots.length) throw new Error("Tidak ada bot WhatsApp aktif!");
     botNumber = bots[Math.floor(Math.random() * bots.length)];
